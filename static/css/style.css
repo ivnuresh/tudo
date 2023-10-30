@@ -1,0 +1,20 @@
+.header {
+    background-color: #0c494f;
+    color: #fff; 
+    padding: 20px;
+}
+
+.task-container {
+    border: 1px solid #ccc; 
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.shadow-box {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.task-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 33px;
+}

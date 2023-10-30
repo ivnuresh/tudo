@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    {% extends "base.html" %}
+    {% load static %}
+    {% block content %}
+    <div class="container">
+        <div class="header text-center" style="margin-top: 25px;padding: 36px;">
+            <h1>TODO UPDATE</h1>
+        </div>
+        <div class="content" style="    margin-left: 340px;margin-top: 29px;">
+        <div class="row">
+            <div class="col-md-6">
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-success">Update Task</button>
+                </form>
+            </div>
+        </div>
+        <a href="{% url 'add' %}" class="btn btn-primary mt-3" style="background-color:#FF9800;border-color:#FF9800;
+        position:absolute;bottom:258px;left: 680px;">Back to Task List</a>
+        {% endblock %}
